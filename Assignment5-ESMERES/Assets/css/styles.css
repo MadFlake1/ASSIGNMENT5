@@ -1,0 +1,247 @@
+/*
+    external css
+    containing the styles for the page
+*/
+
+/* 
+    navbar containing 
+    logo, title and navigation links
+*/
+
+#navbar{
+    display: flex;
+    border-bottom: 1px solid #000;
+    background-color: #66bfbf;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    align-items: center;
+}
+#navtitle{
+    margin-right: 30em;
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+#navlist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+#navlist li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(34, 45, 55);
+    font-size: 30px;
+}
+#navlist li a:hover{
+    color: #fff;
+    background-color: #80c7c7;
+    padding: 10px 20px;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+#navlinks{
+    background-color: #80c7c7;
+    padding: 20px 20px;
+}
+/*first container
+    containing the image and text
+*/
+.BG-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.BG-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.3;
+}
+.container{
+    position: relative;
+    justify-content: center;
+    border: 2px solid #000;
+    margin: 50px 50px;
+    border-radius: 50px;
+    background-color: rgba(102, 191, 191, 0.8);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+
+}
+.content{
+    margin: 20px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hero-image {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    border: #000 solid 2px;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-image:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+.text-and-link{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    gap: 20px;
+}
+.hero-text {
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 50px 10px;
+}
+.hero-link a{
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #80c7c7;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+.hero-link a:hover{
+    background-color: #66bfbf;
+    color: #fff;
+    transition: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/*second container
+    containing the images
+*/
+.image-containers {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    padding: 20px ;
+    background-color: rgba(102, 191, 191);
+    border-radius: 50px ;
+    margin: 50px ;
+}
+.image-row{
+    display: flex;
+    gap: 20px; 
+    z-index: 1;
+}
+.image-row:hover .image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.image {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    object-fit: cover;
+    margin: 20px;
+    transition: transform 0.3s ease; box-shadow: 0.3 ease;
+}
+/*footer
+    I used Identifier to select the footer
+*/
+#footer{
+    padding: 40px;
+    background-color: #66bfbf;
+    border-top: 2px solid #000;
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    gap: 40px;
+}
+#footer-image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid 2px #000; 
+    object-fit: cover;
+    border-radius: 50px;
+}
+#footer-image img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#footer-text-and-links{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 800px;
+    align-items: center;
+}
+#footer-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none   ;
+}
+#footer-links h2{
+    margin-bottom: 10px;
+}
+#footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+#footer-links li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#footer-links li a:hover{
+    color: #fff;
+    background-color: #80c7c7;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+#footer-text{
+    max-width: 800px;
+    align-items: center;
+    padding: 50px;
+    border: 2px solid #000;
+}
+#footer-text h2{
+    margin-bottom: 10px;
+}
+#footer-text p{
+    font-size: 20px;
+    margin: 0;
+}
